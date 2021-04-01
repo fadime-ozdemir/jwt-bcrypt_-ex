@@ -1,0 +1,41 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjE3Mjc4Nzk4LCJleHAiOjE2MTcyNzg4MTN9.CiUhMDQCZYLndrAOXeK1AOYTCm6BhDBQOVTAi12Ln-8
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjE3Mjc4NzEyfQ.tcM788U7z4lo99xb-MKREUyRVnLHPB2eGAxI67vQEvk"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{"username": "fad",
+ "password": "3456"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+ {
+     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjE3Mjc4NzEyfQ.tcM788U7z4lo99xb-MKREUyRVnLHPB2eGAxI67vQEvk"
+ }
+
+###
+GET http://localhost:4000/users
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "username": "fad",
+    "password": "3456"
+}
+###
